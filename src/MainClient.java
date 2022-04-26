@@ -8,18 +8,29 @@ public class MainClient {
 
     public static void main(String[] args) throws MalformedURLException, RemoteException, NotBoundException {
 
+        Trip trip = new Trip();
+
         BookingServiceInterface server = (BookingServiceInterface)
                 Naming.lookup("rmi://127.0.0.1:2001/BookingServiceImpl");
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite o destino de ida");
-        String one_way_trip = sc.nextLine();
+        System.out.print("Digite o local de saida: ");
+        trip.setLeaving_from(sc.nextLine());
 
-        System.out.println("Digite o destino de volta");
-        String return_trip = sc.nextLine();
+        System.out.print("Digite o destino: ");
+        trip.setGoing_to(sc.nextLine());
 
-        server.route(one_way_trip, return_trip);
+        System.out.print("Data de saida: ");
+        trip.setLeaving_date(sc.nextLine());
+
+        System.out.print("Data de chegada: ");
+        trip.setArriving_date(sc.nextLine());
+
+        System.out.print("Deseja voo direto:");
+        trip.setDirect_flight(sc.nextLine().charAt(0));
+
+        server.route(trip);
     }
 
 }
