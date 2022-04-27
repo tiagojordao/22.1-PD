@@ -8,27 +8,42 @@ public class MainClient {
 
     public static void main(String[] args) throws MalformedURLException, RemoteException, NotBoundException {
 
+        int operation;
         Trip trip = new Trip();
 
         BookingServiceInterface server = (BookingServiceInterface)
                 Naming.lookup("rmi://127.0.0.1:2001/BookingServiceImpl");
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("-----------------------------------------------------------------------");
+        System.out.println("TIN`S Booking Service\nEscolha algumas das opções abaixo para continuar");
+        System.out.println("1 - Digitar manualmente\n2 - Ver companias");
+        System.out.println("-----------------------------------------------------------------------");
 
-        System.out.print("Digite o local de saida: ");
-        trip.setLeaving_from(sc.nextLine());
+        operation = sc.nextInt();
+        switch (operation) {
+            case 1:
+                sc.nextLine();
+                System.out.print("Digite o local de saida: ");
+                trip.setLeaving_from(sc.nextLine());
 
-        System.out.print("Digite o destino: ");
-        trip.setGoing_to(sc.nextLine());
+                System.out.print("Digite o destino: ");
+                trip.setGoing_to(sc.nextLine());
 
-        System.out.print("Data de saida: ");
-        trip.setLeaving_date(sc.nextLine());
+                System.out.print("Data de saida: ");
+                trip.setLeaving_date(sc.nextLine());
 
-        System.out.print("Data de chegada: ");
-        trip.setArriving_date(sc.nextLine());
+                System.out.print("Data de chegada: ");
+                trip.setArriving_date(sc.nextLine());
 
-        System.out.print("Deseja voo direto:");
-        trip.setDirect_flight(sc.nextLine().charAt(0));
+                System.out.print("Deseja voo direto? S/N: ");
+                trip.setDirect_flight(sc.nextLine().charAt(0));
+                break;
+            case 2:
+                break;
+            default:
+                System.out.println("wrong inputs!");
+        }
 
         server.route(trip);
     }

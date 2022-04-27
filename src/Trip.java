@@ -1,4 +1,6 @@
-public class Trip implements java.io.Serializable {
+import java.io.Serializable;
+
+public class Trip implements Serializable {
     private String leaving_from;
     private String going_to;
     private String leaving_date;

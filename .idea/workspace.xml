@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15e3bb0d-77b9-4365-a2c7-068af93161ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Trip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookingServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookingServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainClient.java" afterDir="false" />
-    </list>
+    <list default="true" id="15e3bb0d-77b9-4365-a2c7-068af93161ab" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,8 +38,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/tiagojordao/Documents/UFRN/2022.1/prog-dist/u1/rmi/booking-service",
-    "nodejs_package_manager_path": "npm"
+    "last_opened_file_path": "/Users/natalyenne/Documents/college/Programação Distribuída/booking-service",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -102,6 +95,7 @@
       <workItem from="1650928922704" duration="7000" />
       <workItem from="1650932698955" duration="621000" />
       <workItem from="1651010218627" duration="4889000" />
+      <workItem from="1651059801726" duration="4930000" />
     </task>
     <servers />
   </component>
