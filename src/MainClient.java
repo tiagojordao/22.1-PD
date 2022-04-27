@@ -10,6 +10,7 @@ public class MainClient {
 
         int operation;
         Trip trip = new Trip();
+        FlyCompany fc = new FlyCompany();
 
         BookingServiceInterface server = (BookingServiceInterface)
                 Naming.lookup("rmi://127.0.0.1:2001/BookingServiceImpl");
@@ -19,8 +20,8 @@ public class MainClient {
         System.out.println("TIN`S Booking Service\nEscolha algumas das opções abaixo para continuar");
         System.out.println("1 - Digitar manualmente\n2 - Ver companias");
         System.out.println("-----------------------------------------------------------------------");
-
         operation = sc.nextInt();
+
         switch (operation) {
             case 1:
                 sc.nextLine();
