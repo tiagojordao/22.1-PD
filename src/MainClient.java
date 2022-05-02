@@ -43,10 +43,25 @@ public class MainClient {
             case 2:
                 break;
             default:
-                System.out.println("wrong inputs!");
+                System.out.println("Wrong inputs!");
         }
 
         server.route(trip);
-    }
 
+        System.out.println("----------------------------------------------------------");
+        System.out.println("Você agendou a sua viagem com as seguintes informações:\n");
+
+        System.out.println("Local de saída: "+ trip.getLeaving_from());
+        System.out.println("Local de chegada: " + trip.getGoing_to());
+
+        System.out.println("Data de saída: " + trip.getLeaving_date());
+        System.out.println("Data de chegada: " + trip.getArriving_date());
+
+        if(trip.getDirect_flight()){
+            System.out.println("Voo direto? Sim");
+        }
+        else {
+            System.out.println("Voo direto? Não");
+        }
+    }
 }

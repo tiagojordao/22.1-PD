@@ -7,11 +7,8 @@ public class FlyCompany {
     private ArrayList<Flights> flights = new ArrayList<>();
     private Flights flights1 = new Flights("AAAVVBB", "NATAL", "NATAL", "12121212", 2);
 
-
-
     public FlyCompany() {
     }
-
 
     public String getName() {
         return name;
@@ -30,7 +27,6 @@ public class FlyCompany {
         return null;
     }
 
-    // ===
     public void setNewFlight(Flights f) {
         flights.add(f);
     }

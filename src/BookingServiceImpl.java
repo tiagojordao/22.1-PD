@@ -23,8 +23,5 @@ public class BookingServiceImpl extends UnicastRemoteObject implements BookingSe
         System.out.println("Voo direto: " + trip.getDirect_flight());
 
         System.out.println("------------------------------------");
-
-
-
     }
 }
