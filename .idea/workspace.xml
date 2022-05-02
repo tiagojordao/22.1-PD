@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15e3bb0d-77b9-4365-a2c7-068af93161ab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Flights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flights.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlyCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlyCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trip.java" afterDir="false" />
-    </list>
+    <list default="true" id="15e3bb0d-77b9-4365-a2c7-068af93161ab" name="Changes" comment="Add: Reserve Ticket method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,6 +99,14 @@
       <workItem from="1651059801726" duration="4930000" />
       <workItem from="1651465149375" duration="3702000" />
     </task>
+    <task id="LOCAL-00001" summary="Add: Reserve Ticket method">
+      <created>1651531572525</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651531572525</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,5 +122,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add: Reserve Ticket method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add: Reserve Ticket method" />
   </component>
 </project>
