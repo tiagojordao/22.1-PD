@@ -7,13 +7,10 @@ public class Trip implements Serializable {
     private String leaving_date;
     private String arriving_date;
     private Boolean isDirect_flight = false;
-
     private Random gerador = new Random();
     private int trip_code = gerador.nextInt(2000000) + 1000000;
 
-    public Trip() {
-
-    }
+    public Trip() {}
     public Trip(String leaving_from, String going_to) {
         this.leaving_from = leaving_from;
         this.going_to = going_to;
@@ -56,7 +53,6 @@ public class Trip implements Serializable {
     }
 
     public void setDirect_flight(char direct_flight) {
-
         if(direct_flight == 's' || direct_flight == 'S') {
             isDirect_flight = true;
         }

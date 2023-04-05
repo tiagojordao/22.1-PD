@@ -1,7 +1,6 @@
 import java.util.Random;
 
 public class Flights {
-
     private String code;
     private String leaving_from;
     private String going_to;

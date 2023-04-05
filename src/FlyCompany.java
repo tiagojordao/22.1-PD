@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 
 public class FlyCompany {
-
     private String name;
     private ArrayList<String> f_codes = new ArrayList<String>();
     private ArrayList<Flights> flights;
@@ -34,14 +33,13 @@ public class FlyCompany {
         return null;
     }
 
-    public ArrayList<Flights> getAllFlights() {
-        return flights;
-    }
-
     public void setNewFlight(Flights f) {
         flights.add(f);
     }
 
+    public ArrayList<Flights> getAllFlights() {
+        return flights;
+    }
     public String reserveTicket(String flight) {
         for(Flights f : flights){
             if(flight.compareTo(f.getCode()) == 0) {
